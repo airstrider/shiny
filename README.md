@@ -26,7 +26,7 @@ Just input three values that you want. For example, you can input a numereric va
 You can setup the amount of principal you want by directly typing or clicking up&down arrow button of the field.
 
 Step3.
-You will be able to check the refreshed result instantly when you input or edit some of three vlaues. The result will show two future values and the difference of the future values with between compound interest and simple interest 
+On the right side of the screen you will be able to check the refreshed result instantly when you input or edit some of three vlaues. The result will show two future values and the difference of the future values with between compound interest and simple interest 
 Therefore, you can predict two future values of your fund product as well as which interest rate would give you better result.
 
 # Conclusion
