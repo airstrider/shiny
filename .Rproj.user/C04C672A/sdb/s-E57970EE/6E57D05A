@@ -1,0 +1,16 @@
+{
+    "contents" : "compound   <- function(amt, rate, year) amt*(1+(rate/100))^year\nsimple     <- function(amt, rate, year) amt*(1+(rate/100*year))\ncomparison <- function(output) compound - simple\n\nshinyServer(function(input, output) {\n output$prediction_C <- renderPrint({round(compound(input$amt, input$rate, input$year),2)})\n output$prediction_S <- renderPrint({simple(input$amt, input$rate, input$year)})\n output$comparison   <- renderPrint({round((compound(input$amt, input$rate, input$year)-simple(input$amt, input$rate, input$year)),2)})\n})",
+    "created" : 1408557343043.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2200228033",
+    "id" : "6E57D05A",
+    "lastKnownWriteTime" : 1408829624,
+    "path" : "~/Development/R_works/Assign/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\n\nshinyUI(fluidPage(\n  titlePanel(\"Compound vs. Simple Interest\"),\n  sidebarLayout(\n    sidebarPanel(\n      h4('Input'),\n      numericInput(\"amt\", \"Principal ($):\", 50000, step=1000),\n      sliderInput(\"rate\", \"Interest rate(%):\", min=2, max=5, value=2.5, step=0.5),\n      #numericInput(\"rate\", \"Interest rate(%) (up to 5):\", 2.5, min=2, max=5, step=0.5),\n      numericInput(\"year\", \"Maturity (year) (up to 10)\", 2, min=1, max=10, step=1)\n    ),\n    \n    mainPanel(\n      h4('Output'),\n      h5('[1] Total amount in the compound interest ($)'),\n      verbatimTextOutput(\"prediction_C\"),\n      p('Formula: principal * ((1 + interest rate) ^ maturity)', style=\"color:blue\"),\n      br(),\n      h5('[2] Total amount int the simple interest ($)'),\n      verbatimTextOutput(\"prediction_S\"),\n      p('Formula: principal * (1 + (interest rate * maturity))', style=\"color:blue\"),\n      br(),\n      h5('[3] The difference of the amounts ($) ( [1] - [2] )'),\n      verbatimTextOutput(\"comparison\"),\n      br(),\n      p('Which one is your choice?', style=\"color:red\")\n    )\n  )\n))",
+    "created" : 1408557342853.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3469046727",
+    "id" : "9DFFA25D",
+    "lastKnownWriteTime" : 1408829790,
+    "path" : "~/Development/R_works/Assign/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
